@@ -1,0 +1,126 @@
+* {
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background-image: url("https://www.freightwaves.com/wp-content/uploads/2022/04/stg-xpo-intermodal-0414.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+  
+  .container {
+    width: 400px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    background-color: rgba(20, 6, 6, 0.7);
+    border-radius: 10%;
+  }
+  
+  span {
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+  }
+  
+  header {
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    height: 60px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  i {
+    position: relative;
+    top: -31px;
+    left: 17px;
+    color: #fff;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #fff;
+  }
+  
+  .submit {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  
+  .submit:hover {
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  
+  label a {
+    color: #fff;
+  }
+  
+  .left {
+    color: #fff;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .labels {
+    display: flex;
+  }
+  
