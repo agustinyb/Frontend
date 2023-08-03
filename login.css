@@ -24,6 +24,7 @@ body {
   padding: 0 15px 0 15px;
   background-color: rgba(20, 6, 6, 0.7);
   border-radius: 10%;
+  padding-top: 10px;
 }
 
 span {
@@ -122,4 +123,11 @@ label a {
 
 .labels {
   display: flex;
+}
+
+a {
+  padding-left: 100px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  color: #fff;
 }

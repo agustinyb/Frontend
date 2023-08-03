@@ -75,13 +75,13 @@
     border: none;
     border-radius: 30px;
     font-size: 15px;
-    height: 45px;
+    height: 50px;
     outline: none;
     width: 100%;
     background: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
   .submit:hover {
@@ -124,3 +124,9 @@
     display: flex;
   }
   
+  a {
+    padding-left: 130px;
+    color: #fff;
+    display: flex;
+    
+  }
