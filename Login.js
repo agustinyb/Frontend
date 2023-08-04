@@ -5,6 +5,7 @@ btnLogin.addEventListener("click", evento => {
         .then(message => {
             console.log("Mensaje de éxito:", message);
             alert("¡Registro exitoso!");
+            window.location.href = 'importacion.html';
         })
         .catch(error => {
             console.error("Error al registrar:", error);

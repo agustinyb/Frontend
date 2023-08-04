@@ -1,6 +1,6 @@
-let btnLogin = document.getElementById("btnlogin");
+let btnRegister = document.getElementById("btnregister");
 
-btnLogin.addEventListener("click", evento => {
+btnRegister.addEventListener("click", evento => {
     saveFields()
         .then(message => {
             console.log("Mensaje de éxito:", message);
