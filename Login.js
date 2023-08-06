@@ -2,10 +2,13 @@ let btnLogin = document.getElementById("btnlogin");
 
 btnLogin.addEventListener("click", evento => {
     saveFields()
-        .then(message => {
-            console.log("Mensaje de éxito:", message);
+        .then(({token, username}) => {
+            console.log("Token recibido:", token);
+            console.log("Usuario:", username);
             alert("¡Registro exitoso!");
             window.location.href = 'importacion.html';
+            localStorage.setItem("token", token);
+            localStorage.setItem("username", username);
         })
         .catch(error => {
             console.error("Error al registrar:", error);
@@ -30,8 +33,16 @@ let saveFields = async () => {
         });
 
         const response = await request.json();
-        return response.message; // Suponiendo que el servidor devuelve un objeto con una propiedad "message".
+        return { token: response.token, username: fields.username };
     } catch (error) {
         throw error;
     }
 }
+
+let token = response.btnLogin
+
+alert (token);
+alert (username);
+localStorage.setItem("token",token);
+localStorage.setItem("usename",username);
+
