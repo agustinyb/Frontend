@@ -76,22 +76,14 @@ nav a:hover {
   margin-right: 500px;
 }
 
-.green {
+.mandante,.folder,.typeofo,.owner,.pricing,.sales,.executive{
   display: flex;
-  flex-direction: column;
-  height: 800px;
-  width: 600px;
-  margin: 5px;
-  background-color: rgb(127, 172, 255);
 }
 
-.green label {
-  display: inline-block;
-  flex-direction: column;
-  color: white;
-}
-
-.green input {
-  display: flex;
-  flex-direction: column;
+.cont1{
+  height: 400px;
+  width: 400px;
+  display: inline;
+  flex-direction: row;
+  background-color: rgb(0, 89, 255);
 }
