@@ -9,7 +9,6 @@ a {
 
 header {
   display: flex;
-  min-height: 10px;
   background-color: cadetblue;
   justify-content: space-between;
   align-items: center;
@@ -29,22 +28,6 @@ header {
   border-radius: 50%;
 }
 
-label {
-  font-size: 20px;
-  display: block;
-  margin: 10px;
-  background-color: transparent;
-}
-
-input {
-  width: 250px;
-  height: 30px;
-  border-radius: 5px;
-  display: block;
-  margin: 10px;
-  font-size: 20px;
-}
-
 nav a {
   font-weight: 600;
   padding-right: 50px;
@@ -54,36 +37,295 @@ nav a:hover {
   color: white;
 }
 
-@media (max-widht: 700) {
-  header {
-    flex-direction: column;
-  }
-
-  nav {
-    padding: 10px 0px;
-  }
+.correlativo {
+  display: flex;
+  width: 365px;
+  margin: 5px;
+  flex-direction: row;
+  height: 40px;
+  background-color: brown;
+  border: none;
+  align-items: center;
+  border-radius: 8px;
 }
 
 .correlativo label {
-  display: inline-flex;
-  position: absolute;
-  left: 80px;
-  margin-bottom: 50px;
+  display: flex;
+  position: relative;
+  font-size: 15px;
+  width: 65px;
+  color: white;
 }
 
 .correlativo input {
-  display: inline;
-  margin-right: 500px;
+  display: flex;
+  margin-left: 5px;
+  width: 150px;
 }
 
-.mandante,.folder,.typeofo,.owner,.pricing,.sales,.executive{
+.correlativo button {
+  display: flex;
+  position: relative;
+  padding: 12px 24px;
+  left: 30px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.correlativo button:hover {
+  background-color: #0056b3;
+}
+
+.correlativo button:active {
+  transform: scale(0.95);
+}
+
+.correlativo button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+}
+
+.mandante,
+.folder,
+.typeofo,
+.owner,
+.pricing,
+.sales,
+.executive {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  margin-left: 18px;
+  height: 30px;
+  width: 450px;
+  align-items: normal;
+}
+
+.mandante input,
+.folder input,
+.typeofo input,
+.owner input,
+.pricing input,
+.sales input,
+.executive input {
+  display: flex;
+  flex-direction: row;
+  height: 23px;
+  width: 250px;
+  margin-left: 150px;
+}
+
+.mandante label,
+.folder label,
+.typeofo label,
+.owner label,
+.pricing label,
+.sales label,
+.executive label {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  height: 40px;
+  width: 200px;
+  margin-right: 10px;
+  color: white;
+}
+.contgeneral {
   display: flex;
 }
-
-.cont1{
-  height: 400px;
-  width: 400px;
-  display: inline;
-  flex-direction: row;
+.cont1 {
+  height: 250px;
+  width: 450px;
+  margin: 5px;
   background-color: rgb(0, 89, 255);
+  border-radius: 8px;
+}
+
+.agent,
+.network,
+.incoterms,
+.carriage,
+.commodity,
+.country,
+.route,
+.ziparea,
+.zipcoden,
+.placeofr,
+.pol,
+.pod,
+.pode,
+.carrier,
+.tofc,
+.volumen,
+.cargort,
+.addservice {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  margin-left: 18px;
+  height: 30px;
+  width: 450px;
+  align-items: normal;
+}
+
+.agent input,
+.network input,
+.incoterms input,
+.carriage input,
+.commodity input,
+.country input,
+.route input,
+.ziparea input,
+.zipcoden input,
+.placeofr input,
+.pol input,
+.pod input,
+.pode input,
+.carrier input,
+.tofc input,
+.volumen input,
+.cargort input,
+.addservice input {
+  display: flex;
+  flex-direction: row;
+  height: 23px;
+  width: 250px;
+  margin-left: 150px;
+}
+
+.agent label,
+.network label,
+.incoterms label,
+.carriage label,
+.commodity label,
+.country label,
+.route label,
+.ziparea label,
+.zipcoden label,
+.placeofr label,
+.pol label,
+.pod label,
+.pode label,
+.carrier label,
+.tofc label,
+.volumen label,
+.cargort label,
+.addservice label {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  height: 40px;
+  width: 200px;
+  margin-right: 10px;
+  color: white;
+}
+
+.cont2 {
+  height: 640px;
+  width: 450px;
+  margin: 5px;
+  background-color: rgb(255, 123, 0);
+  border-radius: 8px;
+}
+
+.customer,
+.shipper,
+.consignee,
+.notify,
+.facturar,
+.aduana,
+.transpor,
+.reference,
+.invoicen,
+.invoicea,
+.packing {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  margin-left: 18px;
+  height: 30px;
+  width: 450px;
+  align-items: normal;
+}
+
+.customer input,
+.shipper input,
+.consignee input,
+.notify input,
+.facturar input,
+.aduana input,
+.transpor input,
+.reference input,
+.invoicen input,
+.invoicea input,
+.packing input {
+  display: flex;
+  flex-direction: row;
+  height: 23px;
+  width: 250px;
+  margin-left: 150px;
+}
+
+.customer label,
+.shipper label,
+.consignee label,
+.notify label,
+.facturar label,
+.aduana label,
+.transpor label,
+.reference label,
+.invoicen label,
+.invoicea label,
+.packing label {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  height: 40px;
+  width: 200px;
+  margin-right: 10px;
+  color: black;
+}
+
+.cont3 {
+  height: 400px;
+  width: 450px;
+  margin: 5px;
+  background-color: rgb(235, 214, 29);
+  border-radius: 8px;
+}
+
+#btnimpo {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#btnimpo:hover {
+  background-color: #0056b3;
+}
+
+#btnimpo:active {
+  transform: scale(0.95);
+}
+
+#btnimpo:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
 }

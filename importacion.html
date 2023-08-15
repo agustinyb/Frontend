@@ -15,13 +15,6 @@
           alt="logo de la compania"
         />
       </div>
-      <div class="correlativo">
-        <label for="correlativo" class="correlativo" id="correlativo"
-          >Correlativo</label
-        >
-        <input type="text" name="correlativo" id="correlativo" />
-      </div>
-
       <div class="username">
         <label for="username" id="username">username</label>
       </div>
@@ -34,6 +27,14 @@
     </header>
 
     <div class="contgeneral">
+      <div class="correlativo">
+        <label for="correlativo" class="correlativo" id="correlativo"
+          >Correlativo</label
+        >
+
+        <input type="text" name="correlativo" id="correlativo" />
+        <button type="submit" id="btncorrelativo">Generate</button>
+      </div>
       <div class="cont1">
         <div class="mandante">
           <label for="mandantei" id="mandanteil">Mandante interno</label>
@@ -54,7 +55,7 @@
         </div>
         <div class="pricing">
           <label for="pricing" id="pricingl">Pricing Executive</label>
-          <input type="text" name="pricing" id="pricingi " />
+          <input type="text" name="pricing" id="pricinginput" />
         </div>
         <div class="sales">
           <label for="sales" id="salesl">Sales Executive</label>
@@ -160,7 +161,7 @@
         </div>
         <div class="facturar">
           <label for="facturar" id="facturarl">Facturar A</label>
-          <input type="text" name="facturar" id="facturarI" />
+          <input type="text" name="facturar" id="facturari" />
         </div>
         <div class="aduana">
           <label for="aduana" id="aduanal">Agente de Aduana</label>
@@ -186,6 +187,9 @@
           <label for="packing" id="packingl">Packing List</label>
           <input type="text" name="packing" id="packingi" />
         </div>
+      </div>
+      <div class="btnimpo">
+        <button type="submit" id="btnimpo">Save</button>
       </div>
     </div>
     <script src="Importacion.js"></script>

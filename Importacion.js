@@ -27,14 +27,15 @@ let saveFields = async () => {
     fields.folderi = document.getElementById("folderi").value;
     fields.typeofo = document.getElementById("typeofoi").value;
     fields.owner = document.getElementById("owneri").value;
-    fields.pricing = document.getElementById("pricingi").value;
-
+    fields.pricing = document.getElementById("pricinginput").value;
     fields.sales = document.getElementById("salesi").value;
     fields.executive = document.getElementById("executivei").value;
+
+    fields.agent = document.getElementById("agenti").value;
     fields.network = document.getElementById("network").value;
     fields.incoterms = document.getElementById("incotermsi").value;
     fields.carriage = document.getElementById("carriagei").value;
-    fields.commodity = document.getElementById("commodity").value;
+    fields.commodity = document.getElementById("commodityi").value;
 
     fields.country = document.getElementById("countryi").value;
     fields.route = document.getElementById("routei").value;
@@ -42,23 +43,21 @@ let saveFields = async () => {
     fields.zipcoden = document.getElementById("zipcodeni").value;
     fields.placeofr = document.getElementById("placeofri").value;
     fields.poli = document.getElementById("poli").value;
-
     fields.podi = document.getElementById("podi").value;
     fields.pode = document.getElementById("podei").value;
     fields.carrier = document.getElementById("carrieri").value;
     fields.tofc = document.getElementById("tofci").value;
     fields.volumen = document.getElementById("volumeni").value;
     fields.cargort = document.getElementById("cargorti").value;
-
     fields.addservice = document.getElementById("addservicei").value;
+    
     fields.customer = document.getElementById("customeri").value;
     fields.shipper = document.getElementById("shipperi").value;
-    fields.consignee = document.getElementById("consignee").value;
+    fields.consignee = document.getElementById("consigneei").value;
     fields.notify = document.getElementById("notifyi").value;
     fields.facturar = document.getElementById("facturari").value;
-
     fields.aduana = document.getElementById("aduanai").value;
-    fields.transporte = document.getElementById("transporti").value;
+    fields.transporte = document.getElementById("transpori").value;
     fields.reference = document.getElementById("referencei").value;
     fields.invoicen = document.getElementById("invoiceni").value;
     fields.invoicea = document.getElementById("invoiceai").value;
@@ -70,7 +69,8 @@ let saveFields = async () => {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
+                'Authorization': `Bearer ${token}`,
+                'User-Agent': 'GlgApp' 
             },
             body: JSON.stringify(fields)
         });
