@@ -67,6 +67,7 @@ let saveFields = async () => {
         const request = await fetch("http://localhost:8080/api/v1/saveimpo", {
             method: 'POST',
             headers: {
+                'mode': 'no-cors',
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`,
