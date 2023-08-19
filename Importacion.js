@@ -104,6 +104,49 @@ document.getElementById('btncorrelativo').addEventListener('click', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    fetch("http://localhost:8080/api/v1/findlist", {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+            'User-Agent': 'GlgApp'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        var correlativoArray = data; // Supongo que 'data' es el array que recibes
+
+        // Ordenar el array por la propiedad 'correlativo'
+        correlativoArray.sort((a, b) => a.correlativo.localeCompare(b.correlativo));
+
+        const table = document.querySelector('.list table');
+
+        // Definir el arreglo de propiedades que deseas mostrar en la lista
+        const propertiesToShow = ['correlativo', 'folder', 'mandantei', 'customer', 'carrier', 'pol', 'pod', 'booking', 'mblNumber', 'hblNumber', 'eta'];
+
+        // Crear una fila por cada objeto en el array
+        correlativoArray.forEach(function(item) {
+            const row = document.createElement('tr');
+
+            // Crear una celda por cada propiedad seleccionada y asignar el valor correspondiente
+            propertiesToShow.forEach(function(prop) {
+                const cell = document.createElement('td');
+                cell.textContent = item[prop] || ''; // Manejar el caso en que la propiedad esté vacía
+                row.appendChild(cell);
+            });
+
+            table.appendChild(row);
+        });
+    })
+    .catch(error => {
+        console.error('Error al obtener correlativo:', error);
+    });
+});
+
+
+
 
 
 
