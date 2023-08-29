@@ -23,9 +23,10 @@ let saveFields = async () => {
     let fields = {};
 
     fields.correlativo = document.getElementById("correlativo").value;
-    fields.mandante = document.getElementById("mandantei").value;
-    fields.folderi = document.getElementById("folder").value;
-    fields.typeofo = document.getElementById("typeofo").value;
+    fields.user_impo = username; 
+    fields.mandantei = document.getElementById("mandantei").value;
+    fields.folder = document.getElementById("folder").value;
+    fields.typeof = document.getElementById("typeof").value;
     fields.owner = document.getElementById("owner").value;
     fields.pricing = document.getElementById("pricing").value;
     fields.sales = document.getElementById("sales").value;
@@ -33,22 +34,22 @@ let saveFields = async () => {
 
     fields.agent = document.getElementById("agent").value;
     fields.network = document.getElementById("network").value;
-    fields.incoterms = document.getElementById("incoterms").value;
+    fields.incoterm = document.getElementById("incoterm").value;
     fields.carriage = document.getElementById("carriage").value;
     fields.commodity = document.getElementById("commodity").value;
 
     fields.country = document.getElementById("country").value;
     fields.route = document.getElementById("route").value;
     fields.ziparea = document.getElementById("ziparea").value;
-    fields.zipcoden = document.getElementById("zipcoden").value;
+    fields.zipcode = document.getElementById("zipcode").value;
     fields.placeofr = document.getElementById("placeofr").value;
-    fields.poli = document.getElementById("pol").value;
-    fields.podi = document.getElementById("pod").value;
+    fields.pol = document.getElementById("pol").value;
+    fields.pod = document.getElementById("pod").value;
     fields.pode = document.getElementById("pode").value;
     fields.carrier = document.getElementById("carrier").value;
     fields.tofc = document.getElementById("tofc").value;
     fields.volumen = document.getElementById("volumen").value;
-    fields.cargort = document.getElementById("cargort").value;
+    fields.cargort = document.getElementById("cargort").setAttribute("UTC-4").value;
     fields.addservice = document.getElementById("addservice").value;
     
     fields.customer = document.getElementById("customer").value;
@@ -57,17 +58,18 @@ let saveFields = async () => {
     fields.notify = document.getElementById("notify").value;
     fields.facturar = document.getElementById("facturar").value;
     fields.aduana = document.getElementById("aduana").value;
-    fields.transporte = document.getElementById("transpor").value;
+    fields.transport = document.getElementById("transport").value;
     fields.reference = document.getElementById("reference").value;
     fields.invoicen = document.getElementById("invoicen").value;
     fields.invoicea = document.getElementById("invoicea").value;
     fields.packing = document.getElementById("packing").value;
 
+    console.log("Valores de los campos antes de la solicitud POST:", fields); // Agregar esta línea
+
     try {
         const request = await fetch("http://localhost:8080/api/v1/saveimpo", {
             method: 'POST',
             headers: {
-                'mode': 'no-cors',
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`,
@@ -77,6 +79,7 @@ let saveFields = async () => {
         });
 
         const response = await request.json();
+        console.log("Respuesta del servidor:", response);
         return response.message; // Suponiendo que el servidor devuelve un objeto con una propiedad "message".
     } catch (error) {
         throw error;

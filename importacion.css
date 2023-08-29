@@ -1,4 +1,5 @@
 body {
+  
   margin: 0;
 }
 
@@ -13,8 +14,25 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  height: 20px;
 }
 
+input:focus {
+outline-color: #00b7ff;  
+color: black;
+outline-width: 1px; 
+
+
+}
+
+
+
+.username label{
+color: white;
+text-align: start;
+position: relative;
+right: 550px;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -22,7 +40,7 @@ header {
 }
 
 .logo img {
-  height: 40px;
+  height: 30px;
   display: inline-block;
   background-color: beige;
   border-radius: 50%;
@@ -39,7 +57,7 @@ nav a:hover {
 
 .correlativo {
   display: flex;
-  width: 365px;
+  width: 363px;
   margin: 5px;
   flex-direction: row;
   height: 40px;
@@ -55,6 +73,7 @@ nav a:hover {
   font-size: 15px;
   width: 65px;
   color: white;
+  margin-left:6px;
 }
 
 .correlativo input {
@@ -94,7 +113,7 @@ nav a:hover {
 
 .mandante,
 .folder,
-.typeofo,
+.typeof,
 .owner,
 .pricing,
 .sales,
@@ -110,7 +129,7 @@ nav a:hover {
 
 .mandante input,
 .folder input,
-.typeofo input,
+.typeof input,
 .owner input,
 .pricing input,
 .sales input,
@@ -124,7 +143,7 @@ nav a:hover {
 
 .mandante label,
 .folder label,
-.typeofo label,
+.typeof label,
 .owner label,
 .pricing label,
 .sales label,
@@ -330,14 +349,44 @@ nav a:hover {
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
 }
 
-.list{
-  background-color:whitesmoke;
+.list table{
+  background-color:black;
   border-radius: 8px;
-  height: 230px;
-  width: 1200px;
+  height: 260px;
+  width: 2000px;
+  align-items: center;
+  color: white;
 }
 
-.list table{
-color: black;
-border-color: black;
+thead {
+  height: 20px;
+  background-color: cadetblue;
 }
+ 
+.correlativo-width{width: 150px;
+}
+.folder-width{width: 150px;
+}
+.mandante-width{width: 200px;
+}
+.customer-width{width: 200px;
+}
+.carrier-width{width: 150px;
+}
+.pol-width{width: 150px;
+}
+.pod-width{width: 150px;
+}
+.booking-width{width: 100px;
+}
+.mlb-width{width: 100px;
+}
+.hbl-width{width: 100px;
+}
+.eta-width{width: 100px;
+}
+
+tbody tr td{
+  height: 20px;
+}
+

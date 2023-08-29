@@ -22,7 +22,8 @@
       <nav>
         <a href="" class="nav-link">Inicio</a>
         <a href="" class="nav-link">Sobre nosotros</a>
-        <a href="" class="nav-link">Contacto</a>
+        <a href="https://wa.me/56998500024" target="_blank" class="nav-link">Contacto</a>
+        <a href="" class="nav-link">Cotizacion</a>
       </nav>
     </header>
 
@@ -45,9 +46,9 @@
           <label for="folder" id="folderl">Folder Status</label>
           <input type="text" name="folder" id="folder" />
         </div>
-        <div class="typeofo">
-          <label for="typeofo" id="typeofol">Type of Operation</label>
-          <input type="text" name="typeofo" id="typeofo" />
+        <div class="typeof">
+          <label for="typeof" id="typeofol">Type of Operation</label>
+          <input type="text" name="typeofo" id="typeof" />
         </div>
         <div class="owner">
           <label for="owner" id="ownerl">Bussines Owner</label>
@@ -77,8 +78,8 @@
           <input type="text" name="networki" id="network" />
         </div>
         <div class="incoterms">
-          <label for="incoterms" id="incotermsl">Incoterms</label>
-          <input type="text" name="incoterms" id="incoterms" />
+          <label for="incoterm" id="incotermsl">Incoterms</label>
+          <input type="text" name="incoterms" id="incoterm" />
         </div>
         <div class="carriage">
           <label for="carriage" id="carriagel">Carriage Contract</label>
@@ -101,8 +102,8 @@
           <input type="text" name="ziparea" id="ziparea" />
         </div>
         <div class="zipcoden">
-          <label for="zipcoden" id="zipcodenl">Zip Code N°</label>
-          <input type="text" name="zipcoden" id="zipcoden" />
+          <label for="zipcode" id="zipcodenl">Zip Code N°</label>
+          <input type="text" name="zipcoden" id="zipcode" />
         </div>
         <div class="placeofr">
           <label for="placeofr" id="placeofrl">Place Of Receipt</label>
@@ -110,7 +111,7 @@
         </div>
         <div class="pol">
           <label for="pol" id="poll">Port Of Loading</label>
-          <input type="pol" name="pol" id="pol" />
+          <input type="text" name="pol" id="pol" />
         </div>
         <div class="pod">
           <label for="pod" id="podl">Port Of Destination</label>
@@ -134,7 +135,7 @@
         </div>
         <div class="cargort">
           <label for="cargort" id="cargortl">Cargo Ready Time</label>
-          <input type="text" name="cargort" id="cargort" />
+          <input type="date" name="cargort" id="cargort" />
         </div>
         <div class="addservice">
           <label for="addservice" id="addservicel">Additional Service</label>
@@ -168,8 +169,8 @@
           <input type="text" name="aduana" id="aduana" />
         </div>
         <div class="transpor">
-          <label for="transpor" id="transporl">Transportista</label>
-          <input type="text" name="transpor" id="transpor" />
+          <label for="transport" id="transporl">Transportista</label>
+          <input type="text" name="transpor" id="transport" />
         </div>
         <div class="reference">
           <label for="reference" id="referencel">Customer Reference</label>
@@ -194,19 +195,21 @@
     </div>
     <div id= "list" class="list">
 <table>
-  <tr>
-    <th>Correlativo</th>
-    <th>Folder Status</th>
-    <th>Mandante Interno</th>
-    <th>Customer</th>
-    <th>Carrier</th>
-    <th>Pol</th>
-    <th>Pod</th>
-    <th>Booking</th>
-    <th>Mbl Number</th>
-    <th>Hbl Number</th>
-    <th>Eta</th>
+  <thead>
+    <tr>
+    <th class="correlativo-width">Correlativo</th>
+    <th class ="folder-width">Folder Status</th>
+    <th class ="mandante-width">Mandante Interno</th>
+    <th class ="customer-width">Customer</th>
+    <th class ="carrier-width">Carrier</th>
+    <th class ="pol-width">Pol</th>
+    <th class ="pod-width">Pod</th>
+    <th class ="booking-width">Booking</th>
+    <th class ="mbl-width">Mbl Number</th>
+    <th class ="hbl-width">Hbl Number</th>
+    <th class ="eta-width">Eta</th>
   </tr>
+  </thead>  
 </table>
     </div>
     <script src="Importacion.js"></script>
